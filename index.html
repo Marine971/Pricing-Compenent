@@ -4,9 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello world</title>
+    <title>Pricing Compenent</title>
+<style>
+    body{
+        width: 100%;
+        height: 100%;
+    }
+    section{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 30% 70%;
+        background-color: red;
+    }
+    main{
+        order: 2;
+        height: 900px;
+        background-color: aqua;
+    }
+    nav{
+        background-color: blueviolet;
+        order: 1;
+        height:100%;
+        
+    }
+    header{
+        
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+    }
+    header p:first-child{
+        justify-self: start;
+    }
+    header p:nth-child(2){
+        justify-self: end;
+    }
+</style>    
 </head>
 <body>
-    
+    <section>
+        <main>
+            <header>
+                <p>Start now you <b>free plan.</b></p>
+                <p>Are you corporate <br> Contact us</p>
+            </header>
+        </main>
+        <nav>
+            <h1>Lorem ipsum dolor sit 
+                amet, consectetur.</h1>
+
+        </nav>
+    </section>    
 </body>
 </html>
